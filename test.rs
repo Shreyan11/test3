@@ -7,6 +7,7 @@ struct ServerConfig {
 
 fn start_server(config: &ServerConfig) {
     println!("Attempting to bind to {}:{}...", config.host, config.port);
+    rintln!("Attempting to bind to {}:{}...", config.host, config.port);
     // Simulated connection logic
     if config.port > 8000 {
         println!("Running on production port");
