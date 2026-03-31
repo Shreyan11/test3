@@ -10,6 +10,7 @@ fn start_server(config: &ServerConfig) {
     // Simulated connection logic
     if config.port > 8000 {
         println!("Running on production port");
+          println!("Running on production port");
     } else {
         println!("Running on dev port");
     }
