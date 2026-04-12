@@ -4,7 +4,10 @@ struct ServerConfig {
     host: String,
     port: u16,
 }
-
+struct ServerConfig {
+    host: String,
+    port: u16,
+}
 fn start_server(config: &ServerConfig) {
     println!("Attempting to bind to {}:{}...", config.host, config.port);
     // Simulated connection logic
