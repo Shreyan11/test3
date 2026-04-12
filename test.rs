@@ -14,3 +14,6 @@ fn start_server(config: &ServerConfig) {
         println!("Running on dev port");
     }
 }
+    let five_hundred = tup.0;
+    let six_point_four = tup.1;
+    let one = tup.2;
