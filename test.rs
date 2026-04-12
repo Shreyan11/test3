@@ -1,5 +1,8 @@
 // src/server.rs
-
+struct ServerConfig {
+    host: String,
+    port: u16,
+}
 struct ServerConfig {
     host: String,
     port: u16,
