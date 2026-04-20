@@ -13,4 +13,5 @@ fn start_server(config: &ServerConfig) {
     } else {
         println!("Running on dev port");
     }
+    println!("print3\n");
 }
