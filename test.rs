@@ -1,16 +1,19 @@
 // src/server.rs
 
 struct ServerConfig {
-    host: String,
+    address: String,  // Renamed from 'host'
     port: u16,
+    timeout: u32,     // Added new field
 }
 
 fn start_server(config: &ServerConfig) {
-    println!("Attempting to bind to {}:{}...", config.host, config.port);
-    // Simulated connection logic
-    if config.port > 8000 {
-        println!("Running on production port");
+    // Updated to use 'address'
+    println!("Attempting to bind to {}:{} with timeout {}s...", config.address, config.port, config.timeout);
+    
+    // Updated logic
+    if config.port > 8000 && config.timeout < 60 {
+        println!("Running on production port (unsafe timeout)");
     } else {
-        println!("Running on dev port");
+        println!("Configuration OK");
     }
 }
