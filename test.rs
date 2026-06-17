@@ -4,6 +4,9 @@ struct ServerConfig {
     host: String,
     port: u16,
 }
+    let five_hundred = tup.0;
+    let six_point_four = tup.1;
+    let one = tup.2;
 
 fn start_server(config: &ServerConfig) {
     println!("Attempting to bind to {}:{}...", config.host, config.port);
