@@ -4,7 +4,7 @@ struct ServerConfig {
     host: String,
     port: u16,
 }
-
+let int_i8: i8 = -8;
 fn start_server(config: &ServerConfig) {
     println!("Attempting to bind to {}:{}...", config.host, config.port);
     // Simulated connection logic
